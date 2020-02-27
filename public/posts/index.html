@@ -1,563 +1,1037 @@
 <!DOCTYPE html>
-<html lang="en-us">
-<head prefix="og: http://ogp.me/ns#">
+<html lang="en" itemscope itemtype="http://schema.org/WebPage">
+  <head>
+    
+
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
-  <meta property="og:title" content=" Posts &middot;  My React Learning Blogs" />
-  
-  <meta name="theme-color" content="#hexcolor" />
- 
-  <meta property="og:site_name" content="My React Learning Blogs" />
-  <meta property="og:url" content="/posts/" />
-  
-  
-  <meta property="og:type" content="website" />
-  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-  <title>
-     Posts &middot;  My React Learning Blogs
-  </title>
-
-  <link rel="stylesheet" href="css/bootstrap.min.css" />
-  <link rel="stylesheet" href="css/main.css" />
-  <link rel="stylesheet" href="css/font-awesome.min.css" />
-  <link rel="stylesheet" href="css/github.css" />
-  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400" type="text/css">
-  <link rel="shortcut icon" href="images/favicon.ico" />
-  <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
+  <title>Posts - React learning blogs</title>
+  <meta name="author" content="RANG"/><script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "WebSite",
+    "name": "React learning blogs",
+    
+    "url": "https:\/\/peaceful-tor-92061.herokuapp.com\/"
+}
+</script><script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Organization",
+  "name": "",
+  "url": "https:\/\/peaceful-tor-92061.herokuapp.com\/"
   
-</head>
-<body>
-    <header class="global-header"  style="background-image:url( /images/bg.jpg )">
-    <section class="header-text">
-      <h1><a href="">My React Learning Blogs</a></h1>
-      
-      <div class="tag-line">
-        千里之行，始于足下。——老子
+  
+  
+  
+}
+</script>
+
+<meta property="og:title" content="Posts" />
+<meta property="og:image" content="https://peaceful-tor-92061.herokuapp.com/img/avatar-icon.png" />
+<meta property="og:url" content="https://peaceful-tor-92061.herokuapp.com/posts/" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="React learning blogs" />
+
+  <meta name="twitter:title" content="Posts" />
+  <meta name="twitter:image" content="https://peaceful-tor-92061.herokuapp.com/img/avatar-icon.png" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@username" />
+  <meta name="twitter:creator" content="@username" />
+  <link href='https://peaceful-tor-92061.herokuapp.com/img/favicon.ico' rel='icon' type='image/x-icon'/>
+  <meta name="generator" content="Hugo 0.64.0" />
+  <link rel="alternate" href="https://peaceful-tor-92061.herokuapp.com/index.xml" type="application/rss+xml" title="React learning blogs"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css" integrity="sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"><link rel="stylesheet" href="https://peaceful-tor-92061.herokuapp.com/css/main.css" /><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
+  <link rel="stylesheet" href="https://peaceful-tor-92061.herokuapp.com/css/highlight.min.css" /><link rel="stylesheet" href="https://peaceful-tor-92061.herokuapp.com/css/codeblock.css" /><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.css" integrity="sha384-h/L2W9KefUClHWaty3SLE5F/qvc4djlyR4qY3NUV5HGQBBW7stbcfff1+I/vmsHh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/default-skin/default-skin.min.css" integrity="sha384-iD0dNku6PYSIQLyfTOpB06F2KCZJAKLOThS5HRe8b3ibhdEQ6eKsFf/EeFxdOt5R" crossorigin="anonymous">
+
+
+
+  </head>
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="https://peaceful-tor-92061.herokuapp.com/">React learning blogs</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+        
+          
+            <li>
+              <a title="Blog" href="/">Blog</a>
+            </li>
+          
+        
+          
+            <li class="navlinks-container">
+              <a class="navlinks-parent">Samples</a>
+              <div class="navlinks-children">
+                
+                  <a href="/post/2017-03-07-bigimg-sample">Big Image Sample</a>
+                
+                  <a href="/post/2017-03-05-math-sample">Math Sample</a>
+                
+                  <a href="/post/2016-03-08-code-sample">Code Sample</a>
+                
+              </div>
+            </li>
+          
+        
+          
+            <li>
+              <a title="About" href="/page/about/">About</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="Tags" href="/tags">Tags</a>
+            </li>
+          
+        
+
+        
+
+        
+      </ul>
+    </div>
+
+    
+      <div class="avatar-container">
+        <div class="avatar-img-border">
+          <a title="React learning blogs" href="https://peaceful-tor-92061.herokuapp.com/">
+            <img class="avatar-img" src="https://peaceful-tor-92061.herokuapp.com/img/avatar-icon.png" alt="React learning blogs" />
+          </a>
+        </div>
       </div>
+    
+
+  </div>
+</nav>
+
+
+
+
+    
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+<div class="pswp__bg"></div>
+
+<div class="pswp__scroll-wrap">
+    
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    
+    <div class="pswp__ui pswp__ui--hidden">
+    <div class="pswp__top-bar">
       
-      <div class="sns-links hidden-print">
-  
-  <a href="#ZgotmplZ">
-    <i class="fa fa-envelope"></i>
-  </a>
-  
-  
-  <a href="https://twitter.com/rang" target="_blank">
-    <i class="fa fa-twitter"></i>
-  </a>
-  
-  
-  <a href="https://instagram.com/Your%20Instagram%20username" target="_blank">
-    <i class="fa fa-instagram"></i>
-  </a>
-  
-  
-  <a href="https://plus.google.com/+Your%20Google&#43;%20user%20id" target="_blank">
-    <i class="fa fa-google"></i>
-  </a>
-  
-  
-  <a href="https://facebook.com/Your%20Facebook%20username" target="_blank">
-    <i class="fa fa-facebook"></i>
-  </a>
-  
-  
-  <a href="https://github.com/rangwei" target="_blank">
-    <i class="fa fa-github"></i>
-  </a>
-  
-  
-  <a href="https://gitlab.com/Your%20GitLab%20username" target="_blank">
-    <i class="fa fa-gitlab"></i>
-  </a>
-  
-  
-  <a href="https://reddit.com/user/Your%20Reddit%20username" target="_blank">
-    <i class="fa fa-reddit-alien"></i>
-  </a>
-  
-  
-  <a href="https://news.ycombinator.com/user?id=Your%20Hacker%20News%20username" target="_blank">
-    <i class="fa fa-hacker-news"></i>
-  </a>
-  
-  
-  <a href="https://stackoverflow.com/users/Your%20Stackoverflow%20user%20id%20%28number%29" target="_blank">
-    <i class="fa fa-stack-overflow"></i>
-  </a>
-  
-  
-  <a href="https://linkedin.com/in/Your%20LinkedIn%20username" target="_blank">
-    <i class="fa fa-linkedin"></i>
-  </a>
-  
-  
-  <a href="https://keybase.io/Your%20keybase.io%20username" target="_blank">
-    <i class="fa fa-key"></i>
-  </a>
-  
+      <div class="pswp__counter"></div>
+      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+      <button class="pswp__button pswp__button--share" title="Share"></button>
+      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+      
+      
+      <div class="pswp__preloader">
+        <div class="pswp__preloader__icn">
+          <div class="pswp__preloader__cut">
+            <div class="pswp__preloader__donut"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+      <div class="pswp__share-tooltip"></div>
+    </div>
+    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+    </button>
+    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+    </button>
+    <div class="pswp__caption">
+      <div class="pswp__caption__center"></div>
+    </div>
+    </div>
+    </div>
 </div>
 
-      
-      <a href="" class="btn-header btn-back hidden-xs">
-        <i class="fa fa-angle-left" aria-hidden="true"></i>
-        &nbsp;Home
-      </a>
-      
-      
-      <a href="/posts/index.xml" class="btn-header btn-subscribe hidden-xs">
-        <i class="fa fa-rss" aria-hidden="true"></i>
-        &nbsp;Subscribe
-      </a>
-      
-    </section>
-  </header>
-  <main class="container">
 
-<section class="article-list">
-  <h1>Posts</h1>
   
-  <hr/>
-  <article>
-  <header>
-    <h2><a href="/posts/react%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B012-%E5%BF%AB%E9%80%9F%E6%9E%84%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%8A%A8%E6%80%81%E5%85%A8%E7%90%83%E7%8B%AC%E8%A7%92%E5%85%BD%E5%88%97%E8%A1%A8%E7%BD%91%E7%AB%997/">React学习笔记12</a></h2>
-    <div class="post-meta clearfix">
-      <div class="post-date pull-left">
-        Posted on
-        <time datetime="2020-02-12T09:38:48&#43;08:00">
-          Feb 12, 2020
-        </time>
+  
+  
+
+
+
+
+
+
+  
+
+  <header class="header-section ">
+    
+    <div class="intro-header no-img">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="posts-heading">
+              
+                <h1>Posts</h1>
+              
+              
+                <hr class="small">
+              
+              
+              
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </header>
-  <div>
-    后台管理开发 后台管理开发也很简单，和前台的开发思路其实差不多，就是增加了几个页面。 新建数据、编辑数据、删除数据。
+
+
+    
+  <div class="container" role="main">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        
+        <div class="posts-list">
+          
+            <article class="post-preview">
+    <a href="https://peaceful-tor-92061.herokuapp.com/posts/react%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B012-%E5%BF%AB%E9%80%9F%E6%9E%84%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%8A%A8%E6%80%81%E5%85%A8%E7%90%83%E7%8B%AC%E8%A7%92%E5%85%BD%E5%88%97%E8%A1%A8%E7%BD%91%E7%AB%997/">
+        <h2 class="post-title">React学习笔记12</h2>
+        
+        
+        
+    </a>
+
+    <p class="post-meta">
+        <span class="post-meta">
+  
+  
+  <i class="fas fa-calendar"></i>&nbsp;Posted on February 12, 2020
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;minutes
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;154&nbsp;words
+  
+  
+    
+      &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;RANG
+    
+  
+  
+</span>
+
+
+    </p>
+    <div class="post-entry">
+        
+        后台管理开发 后台管理开发也很简单，和前台的开发思路其实差不多，就是增加了几个页面。 新建数据、编辑数据、删除数据。
 数据展示 在列表中生成了两个链接，分别是编辑和删除。
-return ( &lt;div id=&quot;content-wrapper&quot; class=&quot;mui--text-center&quot;&gt; &lt;div class=&quot;mui--appbar-height&quot;&gt;&lt;/div&gt; &lt;br /&gt; &lt;br /&gt; &lt;div class=&quot;mui--text-display3&quot;&gt;Global Unicorn&lt;/div&gt; &lt;br /&gt; &lt;br /&gt; &lt;table className=&quot;mui-table&quot;&gt; &lt;thead&gt; &lt;tr&gt; &lt;td&gt;id&lt;/td&gt; &lt;td&gt;name&lt;/td&gt; &lt;td&gt;country&lt;/td&gt; &lt;td&gt;last_funding_on&lt;/td&gt; &lt;td&gt;total_equity_funding&lt;/td&gt; &lt;td&gt;founded_on&lt;/td&gt; &lt;td&gt;category&lt;/td&gt; &lt;td&gt;post_money_val&lt;/td&gt; &lt;td&gt;operation&lt;/td&gt; &lt;/tr&gt; &lt;/thead&gt; &lt;tbody&gt; { this.props.data.map( u =&gt; &lt;tr&gt; &lt;td&gt;{u.id}&lt;/td&gt; &lt;td&gt;{u.name}&lt;/td&gt; &lt;td&gt;{u.country}&lt;/td&gt; &lt;td&gt;{u.last_funding_on}&lt;/td&gt; &lt;td&gt;{u.total_equity_funding}&lt;/td&gt; &lt;td&gt;{u.founded_on}&lt;/td&gt; &lt;td&gt;{u.category}&lt;/td&gt; &lt;td&gt;{u.post_money_val}&lt;/td&gt; &lt;Link to={&quot;/edit/&quot; + u.id}&gt;edit&lt;/Link&gt; | &lt;a href=&quot;#&quot; onClick={() =&gt; { this.props.delete(u.id) }}&gt;delete&lt;/a&gt; &lt;/tr&gt; ) } &lt;/tbody&gt; &lt;/table&gt; &lt;/div&gt; ); 新建数据 通过axios发送一个post请求来删除数据。
-  </div>
-  
-  <footer>
-    <ul class="pager">
-      <li class="next"><a href="/posts/react%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B012-%E5%BF%AB%E9%80%9F%E6%9E%84%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%8A%A8%E6%80%81%E5%85%A8%E7%90%83%E7%8B%AC%E8%A7%92%E5%85%BD%E5%88%97%E8%A1%A8%E7%BD%91%E7%AB%997/">Read more <span aria-hidden="true">&raquo;</span></a></li>
-    </ul>
-  </footer>
-  
-</article>
-
-  
-  <hr/>
-  <article>
-  <header>
-    <h2><a href="/posts/react%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B011-%E5%BF%AB%E9%80%9F%E6%9E%84%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%8A%A8%E6%80%81%E5%85%A8%E7%90%83%E7%8B%AC%E8%A7%92%E5%85%BD%E5%88%97%E8%A1%A8%E7%BD%91%E7%AB%996/">React学习笔记11</a></h2>
-    <div class="post-meta clearfix">
-      <div class="post-date pull-left">
-        Posted on
-        <time datetime="2020-02-11T09:38:48&#43;08:00">
-          Feb 11, 2020
-        </time>
-      </div>
+return ( &lt;div id=&#34;content-wrapper&#34; class=&#34;mui--text-center&#34;&gt; &lt;div class=&#34;mui--appbar-height&#34;&gt;&lt;/div&gt; &lt;br /&gt; &lt;br /&gt; &lt;div class=&#34;mui--text-display3&#34;&gt;Global Unicorn&lt;/div&gt; &lt;br /&gt; &lt;br /&gt; &lt;table className=&#34;mui-table&#34;&gt; &lt;thead&gt; &lt;tr&gt; &lt;td&gt;id&lt;/td&gt; &lt;td&gt;name&lt;/td&gt; &lt;td&gt;country&lt;/td&gt; &lt;td&gt;last_funding_on&lt;/td&gt; &lt;td&gt;total_equity_funding&lt;/td&gt; &lt;td&gt;founded_on&lt;/td&gt; &lt;td&gt;category&lt;/td&gt; &lt;td&gt;post_money_val&lt;/td&gt; &lt;td&gt;operation&lt;/td&gt; &lt;/tr&gt; &lt;/thead&gt; &lt;tbody&gt; { this.props.data.map( u =&gt; &lt;tr&gt; &lt;td&gt;{u.id}&lt;/td&gt; &lt;td&gt;{u.name}&lt;/td&gt; &lt;td&gt;{u.country}&lt;/td&gt; &lt;td&gt;{u.last_funding_on}&lt;/td&gt; &lt;td&gt;{u.total_equity_funding}&lt;/td&gt; &lt;td&gt;{u.founded_on}&lt;/td&gt; &lt;td&gt;{u.category}&lt;/td&gt; &lt;td&gt;{u.post_money_val}&lt;/td&gt; &lt;Link to={&#34;/edit/&#34; + u.id}&gt;edit&lt;/Link&gt; | &lt;a href=&#34;#&#34; onClick={() =&gt; { this.props.delete(u.id) }}&gt;delete&lt;/a&gt; &lt;/tr&gt; ) } &lt;/tbody&gt; &lt;/table&gt; &lt;/div&gt; ); 新建数据 通过axios发送一个post请求来删除数据。
+        <a href="https://peaceful-tor-92061.herokuapp.com/posts/react%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B012-%E5%BF%AB%E9%80%9F%E6%9E%84%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%8A%A8%E6%80%81%E5%85%A8%E7%90%83%E7%8B%AC%E8%A7%92%E5%85%BD%E5%88%97%E8%A1%A8%E7%BD%91%E7%AB%997/" class="post-read-more">[Read More]</a>
+        
     </div>
-  </header>
-  <div>
-    后台管理设计 接下来通过React来做一个简单的后台管理应用。
-主要功能 完成后大致是这样子：
-  主界面显示完整信息。
-  有创建、修改、删除功能。
-  有翻页功能。
-  技术架构 前端用的是Bootstrap。这个后端程序，UI换一个简单的MUICSS，极简风格。 翻页就不自己写了，直接用了开源组件, ReactPaginate。
-参考阅读   https://www.muicss.com/
-  https://www.npmjs.com/package/react-paginate
-  
-  </div>
-  
-</article>
 
-  
-  <hr/>
-  <article>
-  <header>
-    <h2><a href="/posts/react%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B010-%E5%BF%AB%E9%80%9F%E6%9E%84%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%8A%A8%E6%80%81%E5%85%A8%E7%90%83%E7%8B%AC%E8%A7%92%E5%85%BD%E5%88%97%E8%A1%A8%E7%BD%91%E7%AB%995/">React学习笔记10</a></h2>
-    <div class="post-meta clearfix">
-      <div class="post-date pull-left">
-        Posted on
-        <time datetime="2020-02-10T09:38:48&#43;08:00">
-          Feb 10, 2020
-        </time>
-      </div>
-    </div>
-  </header>
-  <div>
-    测试运行 主页 独角兽列表 翻页 项目代码  后端  https://github.com/rangwei/unicorns-sails
- 前端  https://github.com/rangwei/unicorns-react-bootstrap
-  </div>
-  
-</article>
+    
 
+</article>
+          
+            <article class="post-preview">
+    <a href="https://peaceful-tor-92061.herokuapp.com/posts/react%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B011-%E5%BF%AB%E9%80%9F%E6%9E%84%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%8A%A8%E6%80%81%E5%85%A8%E7%90%83%E7%8B%AC%E8%A7%92%E5%85%BD%E5%88%97%E8%A1%A8%E7%BD%91%E7%AB%996/">
+        <h2 class="post-title">React学习笔记11</h2>
+        
+        
+        
+    </a>
+
+    <p class="post-meta">
+        <span class="post-meta">
   
-  <hr/>
-  <article>
-  <header>
-    <h2><a href="/posts/react%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B09-%E5%BF%AB%E9%80%9F%E6%9E%84%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%8A%A8%E6%80%81%E5%85%A8%E7%90%83%E7%8B%AC%E8%A7%92%E5%85%BD%E5%88%97%E8%A1%A8%E7%BD%91%E7%AB%994/">React学习笔记9</a></h2>
-    <div class="post-meta clearfix">
-      <div class="post-date pull-left">
-        Posted on
-        <time datetime="2020-02-09T09:38:48&#43;08:00">
-          Feb 9, 2020
-        </time>
-      </div>
+  
+  <i class="fas fa-calendar"></i>&nbsp;Posted on February 11, 2020
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;minutes
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;14&nbsp;words
+  
+  
+    
+      &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;RANG
+    
+  
+  
+</span>
+
+
+    </p>
+    <div class="post-entry">
+        
+        <h1 id="后台管理设计">后台管理设计</h1>
+<p>接下来通过React来做一个简单的后台管理应用。</p>
+<h2 id="主要功能">主要功能</h2>
+<p>完成后大致是这样子：</p>
+<ol>
+<li>
+<p>主界面显示完整信息。</p>
+</li>
+<li>
+<p>有创建、修改、删除功能。</p>
+</li>
+<li>
+<p>有翻页功能。</p>
+</li>
+</ol>
+<h2 id="技术架构">技术架构</h2>
+<p>前端用的是Bootstrap。这个后端程序，UI换一个简单的MUICSS，极简风格。
+翻页就不自己写了，直接用了开源组件, ReactPaginate。</p>
+<h2 id="参考阅读">参考阅读</h2>
+<ul>
+<li>
+<p><a href="https://www.muicss.com/">https://www.muicss.com/</a></p>
+</li>
+<li>
+<p><a href="https://www.npmjs.com/package/react-paginate">https://www.npmjs.com/package/react-paginate</a></p>
+</li>
+</ul>
+
+        
     </div>
-  </header>
-  <div>
-    动态数据展示 Router 主程序代码，通过react-router-dom来实现页面的Router
+
+    
+
+</article>
+          
+            <article class="post-preview">
+    <a href="https://peaceful-tor-92061.herokuapp.com/posts/react%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B010-%E5%BF%AB%E9%80%9F%E6%9E%84%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%8A%A8%E6%80%81%E5%85%A8%E7%90%83%E7%8B%AC%E8%A7%92%E5%85%BD%E5%88%97%E8%A1%A8%E7%BD%91%E7%AB%995/">
+        <h2 class="post-title">React学习笔记10</h2>
+        
+        
+        
+    </a>
+
+    <p class="post-meta">
+        <span class="post-meta">
+  
+  
+  <i class="fas fa-calendar"></i>&nbsp;Posted on February 10, 2020
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;minutes
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;9&nbsp;words
+  
+  
+    
+      &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;RANG
+    
+  
+  
+</span>
+
+
+    </p>
+    <div class="post-entry">
+        
+        <h1 id="测试运行">测试运行</h1>
+<h2 id="主页">主页</h2>
+<h2 id="独角兽列表">独角兽列表</h2>
+<h2 id="翻页">翻页</h2>
+<h2 id="项目代码">项目代码</h2>
+<ul>
+<li>后端</li>
+</ul>
+<p><a href="https://github.com/rangwei/unicorns-sails">https://github.com/rangwei/unicorns-sails</a></p>
+<ul>
+<li>前端</li>
+</ul>
+<p><a href="https://github.com/rangwei/unicorns-react-bootstrap">https://github.com/rangwei/unicorns-react-bootstrap</a></p>
+
+        
+    </div>
+
+    
+
+</article>
+          
+            <article class="post-preview">
+    <a href="https://peaceful-tor-92061.herokuapp.com/posts/react%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B09-%E5%BF%AB%E9%80%9F%E6%9E%84%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%8A%A8%E6%80%81%E5%85%A8%E7%90%83%E7%8B%AC%E8%A7%92%E5%85%BD%E5%88%97%E8%A1%A8%E7%BD%91%E7%AB%994/">
+        <h2 class="post-title">React学习笔记9</h2>
+        
+        
+        
+    </a>
+
+    <p class="post-meta">
+        <span class="post-meta">
+  
+  
+  <i class="fas fa-calendar"></i>&nbsp;Posted on February 9, 2020
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;minutes
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;182&nbsp;words
+  
+  
+    
+      &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;RANG
+    
+  
+  
+</span>
+
+
+    </p>
+    <div class="post-entry">
+        
+        动态数据展示 Router 主程序代码，通过react-router-dom来实现页面的Router
 App.js：
-import React from 'react'; import Navbar from './Navbar'; import Unicorns from './Unicorns'; import Main from './Main'; import './master.css'; import { BrowserRouter as Router, Route} from &quot;react-router-dom&quot;; function App() { return ( &lt;Router&gt; &lt;Navbar/&gt; &lt;Route path=&quot;/&quot; exact component={Main} /&gt; &lt;Route path=&quot;/unicorns/:page&quot; component={Unicorns} /&gt; &lt;/Router&gt; ); } export default App; 设置代理 修改package.json 增加：
-&quot;proxy&quot;: &quot;http://localhost:1337&quot; 这样React可以自动代理访问后台api服务。
+import React from &#39;react&#39;; import Navbar from &#39;./Navbar&#39;; import Unicorns from &#39;./Unicorns&#39;; import Main from &#39;./Main&#39;; import &#39;./master.css&#39;; import { BrowserRouter as Router, Route} from &#34;react-router-dom&#34;; function App() { return ( &lt;Router&gt; &lt;Navbar/&gt; &lt;Route path=&#34;/&#34; exact component={Main} /&gt; &lt;Route path=&#34;/unicorns/:page&#34; component={Unicorns} /&gt; &lt;/Router&gt; ); } export default App; 设置代理 修改package.json 增加：
+&#34;proxy&#34;: &#34;http://localhost:1337&#34; 这样React可以自动代理访问后台api服务。
 主页面和显示逻辑 设置了几个state，主要用于翻页和获取数据的逻辑，然后通过axios来获取数据，然后通过列表显示。
 Unicorns.js:
-import React, { useState, useEffect } from 'react'; import List from '.
-  </div>
-  
-  <footer>
-    <ul class="pager">
-      <li class="next"><a href="/posts/react%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B09-%E5%BF%AB%E9%80%9F%E6%9E%84%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%8A%A8%E6%80%81%E5%85%A8%E7%90%83%E7%8B%AC%E8%A7%92%E5%85%BD%E5%88%97%E8%A1%A8%E7%BD%91%E7%AB%994/">Read more <span aria-hidden="true">&raquo;</span></a></li>
-    </ul>
-  </footer>
-  
-</article>
-
-  
-  <hr/>
-  <article>
-  <header>
-    <h2><a href="/posts/react%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B08-%E5%BF%AB%E9%80%9F%E6%9E%84%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%8A%A8%E6%80%81%E5%85%A8%E7%90%83%E7%8B%AC%E8%A7%92%E5%85%BD%E5%88%97%E8%A1%A8%E7%BD%91%E7%AB%993/">React学习笔记8</a></h2>
-    <div class="post-meta clearfix">
-      <div class="post-date pull-left">
-        Posted on
-        <time datetime="2020-02-08T09:38:48&#43;08:00">
-          Feb 8, 2020
-        </time>
-      </div>
+import React, { useState, useEffect } from &#39;react&#39;; import List from &#39;.
+        <a href="https://peaceful-tor-92061.herokuapp.com/posts/react%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B09-%E5%BF%AB%E9%80%9F%E6%9E%84%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%8A%A8%E6%80%81%E5%85%A8%E7%90%83%E7%8B%AC%E8%A7%92%E5%85%BD%E5%88%97%E8%A1%A8%E7%BD%91%E7%AB%994/" class="post-read-more">[Read More]</a>
+        
     </div>
-  </header>
-  <div>
-    页面开发 页面开发很简单。分为两个部分。 通过React的Function Component来实现列表和翻页条。
+
+    
+
+</article>
+          
+            <article class="post-preview">
+    <a href="https://peaceful-tor-92061.herokuapp.com/posts/react%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B08-%E5%BF%AB%E9%80%9F%E6%9E%84%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%8A%A8%E6%80%81%E5%85%A8%E7%90%83%E7%8B%AC%E8%A7%92%E5%85%BD%E5%88%97%E8%A1%A8%E7%BD%91%E7%AB%993/">
+        <h2 class="post-title">React学习笔记8</h2>
+        
+        
+        
+    </a>
+
+    <p class="post-meta">
+        <span class="post-meta">
+  
+  
+  <i class="fas fa-calendar"></i>&nbsp;Posted on February 8, 2020
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;minutes
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;188&nbsp;words
+  
+  
+    
+      &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;RANG
+    
+  
+  
+</span>
+
+
+    </p>
+    <div class="post-entry">
+        
+        页面开发 页面开发很简单。分为两个部分。 通过React的Function Component来实现列表和翻页条。
 列表显示 List.js:
-import React, { useState } from 'react'; export default function List({unicorns}) { return ( &lt;table class=&quot;table table-light table-hover table-bordered&quot;&gt; &lt;thead&gt; &lt;tr&gt; &lt;th scope=&quot;col&quot;&gt;Name&lt;/th&gt; &lt;th scope=&quot;col&quot;&gt;Country&lt;/th&gt; &lt;th scope=&quot;col&quot;&gt;Founded on&lt;/th&gt; &lt;th scope=&quot;col&quot;&gt;Category&lt;/th&gt; &lt;/tr&gt; &lt;/thead&gt; &lt;tbody&gt; { unicorns.map( (item) =&gt; &lt;tr&gt; &lt;td&gt;{item.name}&lt;/td&gt; &lt;td&gt;{item.country}&lt;/td&gt; &lt;td&gt;{item.founded_on}&lt;/td&gt; &lt;td&gt;{item.category}&lt;/td&gt; &lt;/tr&gt; ) } &lt;/tbody&gt; &lt;/table&gt; ); } 翻页条 根据当前的页面总数来展示，并且高亮显示当前页。
+import React, { useState } from &#39;react&#39;; export default function List({unicorns}) { return ( &lt;table class=&#34;table table-light table-hover table-bordered&#34;&gt; &lt;thead&gt; &lt;tr&gt; &lt;th scope=&#34;col&#34;&gt;Name&lt;/th&gt; &lt;th scope=&#34;col&#34;&gt;Country&lt;/th&gt; &lt;th scope=&#34;col&#34;&gt;Founded on&lt;/th&gt; &lt;th scope=&#34;col&#34;&gt;Category&lt;/th&gt; &lt;/tr&gt; &lt;/thead&gt; &lt;tbody&gt; { unicorns.map( (item) =&gt; &lt;tr&gt; &lt;td&gt;{item.name}&lt;/td&gt; &lt;td&gt;{item.country}&lt;/td&gt; &lt;td&gt;{item.founded_on}&lt;/td&gt; &lt;td&gt;{item.category}&lt;/td&gt; &lt;/tr&gt; ) } &lt;/tbody&gt; &lt;/table&gt; ); } 翻页条 根据当前的页面总数来展示，并且高亮显示当前页。
 Page.js:
-import React, { Component } from 'react'; // import unicorns from './data/unicorns.json'; import { Link } from 'react-router-dom'; export default function Page(props) { const total = props.
-  </div>
-  
-  <footer>
-    <ul class="pager">
-      <li class="next"><a href="/posts/react%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B08-%E5%BF%AB%E9%80%9F%E6%9E%84%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%8A%A8%E6%80%81%E5%85%A8%E7%90%83%E7%8B%AC%E8%A7%92%E5%85%BD%E5%88%97%E8%A1%A8%E7%BD%91%E7%AB%993/">Read more <span aria-hidden="true">&raquo;</span></a></li>
-    </ul>
-  </footer>
-  
-</article>
-
-  
-  <hr/>
-  <article>
-  <header>
-    <h2><a href="/posts/react%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B07-%E5%BF%AB%E9%80%9F%E6%9E%84%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%8A%A8%E6%80%81%E5%85%A8%E7%90%83%E7%8B%AC%E8%A7%92%E5%85%BD%E5%88%97%E8%A1%A8%E7%BD%91%E7%AB%992/">React学习笔记7</a></h2>
-    <div class="post-meta clearfix">
-      <div class="post-date pull-left">
-        Posted on
-        <time datetime="2020-02-07T09:38:48&#43;08:00">
-          Feb 7, 2020
-        </time>
-      </div>
+import React, { Component } from &#39;react&#39;; // import unicorns from &#39;./data/unicorns.json&#39;; import { Link } from &#39;react-router-dom&#39;; export default function Page(props) { const total = props.
+        <a href="https://peaceful-tor-92061.herokuapp.com/posts/react%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B08-%E5%BF%AB%E9%80%9F%E6%9E%84%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%8A%A8%E6%80%81%E5%85%A8%E7%90%83%E7%8B%AC%E8%A7%92%E5%85%BD%E5%88%97%E8%A1%A8%E7%BD%91%E7%AB%993/" class="post-read-more">[Read More]</a>
+        
     </div>
-  </header>
-  <div>
-    后端API开发 通过Sails.js可以快速构建一个后端的服务。
+
+    
+
+</article>
+          
+            <article class="post-preview">
+    <a href="https://peaceful-tor-92061.herokuapp.com/posts/react%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B07-%E5%BF%AB%E9%80%9F%E6%9E%84%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%8A%A8%E6%80%81%E5%85%A8%E7%90%83%E7%8B%AC%E8%A7%92%E5%85%BD%E5%88%97%E8%A1%A8%E7%BD%91%E7%AB%992/">
+        <h2 class="post-title">React学习笔记7</h2>
+        
+        
+        
+    </a>
+
+    <p class="post-meta">
+        <span class="post-meta">
+  
+  
+  <i class="fas fa-calendar"></i>&nbsp;Posted on February 7, 2020
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;minutes
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;191&nbsp;words
+  
+  
+    
+      &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;RANG
+    
+  
+  
+</span>
+
+
+    </p>
+    <div class="post-entry">
+        
+        后端API开发 通过Sails.js可以快速构建一个后端的服务。
 建模 通过下面这条命令来新建一个model:
 sails generate api Unicorns 建模，修改Unicorns.js:
-module.exports = { attributes: { name: { type: 'string', required: true }, country: { type: 'string' }, last_funding_on: { type: 'string', columnType: 'date' }, total_equity_funding: { type: 'number' }, founded_on: { type: 'number' }, category: { type: 'string' }, post_money_val: { type: 'number' } }, }; 对于数据的CRUD操作，Sails.js的Bluprint立刻自动生成了RESTFul的API。 可以通过http://localhost:1337/Unicorns来访问服务。
+module.exports = { attributes: { name: { type: &#39;string&#39;, required: true }, country: { type: &#39;string&#39; }, last_funding_on: { type: &#39;string&#39;, columnType: &#39;date&#39; }, total_equity_funding: { type: &#39;number&#39; }, founded_on: { type: &#39;number&#39; }, category: { type: &#39;string&#39; }, post_money_val: { type: &#39;number&#39; } }, }; 对于数据的CRUD操作，Sails.js的Bluprint立刻自动生成了RESTFul的API。 可以通过http://localhost:1337/Unicorns来访问服务。
 数据库中导入数据 通过下面这条命令来新建一个action:
 sails generate action import import.js:
-const data = require('../../tools/unicorns'); module.exports = { friendlyName: 'Import', description: 'Import something.
-  </div>
-  
-  <footer>
-    <ul class="pager">
-      <li class="next"><a href="/posts/react%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B07-%E5%BF%AB%E9%80%9F%E6%9E%84%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%8A%A8%E6%80%81%E5%85%A8%E7%90%83%E7%8B%AC%E8%A7%92%E5%85%BD%E5%88%97%E8%A1%A8%E7%BD%91%E7%AB%992/">Read more <span aria-hidden="true">&raquo;</span></a></li>
-    </ul>
-  </footer>
-  
-</article>
-
-  
-  <hr/>
-  <article>
-  <header>
-    <h2><a href="/posts/react%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B06-%E5%BF%AB%E9%80%9F%E6%9E%84%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%8A%A8%E6%80%81%E5%85%A8%E7%90%83%E7%8B%AC%E8%A7%92%E5%85%BD%E5%88%97%E8%A1%A8%E7%BD%91%E7%AB%991/">React学习笔记6</a></h2>
-    <div class="post-meta clearfix">
-      <div class="post-date pull-left">
-        Posted on
-        <time datetime="2020-02-06T09:38:48&#43;08:00">
-          Feb 6, 2020
-        </time>
-      </div>
+const data = require(&#39;../../tools/unicorns&#39;); module.exports = { friendlyName: &#39;Import&#39;, description: &#39;Import something.
+        <a href="https://peaceful-tor-92061.herokuapp.com/posts/react%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B07-%E5%BF%AB%E9%80%9F%E6%9E%84%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%8A%A8%E6%80%81%E5%85%A8%E7%90%83%E7%8B%AC%E8%A7%92%E5%85%BD%E5%88%97%E8%A1%A8%E7%BD%91%E7%AB%992/" class="post-read-more">[Read More]</a>
+        
     </div>
-  </header>
-  <div>
-    React学习笔记6-快速构建一个动态全球独角兽列表网站(1)
-设计和架构 下面来通过React实战构建一个关于全球独角兽列表的网站。 主要就是作为一个小练习实践一下从前端到后端的web开发技术。
-界面设计 最快的方式当然直接用Bootstrap搞定，大概如下：
-网页布局主要包含三个部分：导航栏， 主要内容，翻页条。
-React的翻页功能有很多库已经可以直接用，但是出于学习的目的，这里还是手工写一个，逻辑也不复杂。
-后台数据格式 数据结构比较简单，从网上抓取的，主要包含： 独角兽名称，国家，最后一轮融资日期，总融资金额，创建年份，类别，估值，数据示例：
-{ &quot;name&quot;: &quot;BAIC BJEV&quot;, &quot;country&quot;: &quot;CHN&quot;, &quot;last_funding_on&quot;: &quot;2017-08-01&quot;, &quot;total_equity_funding&quot;: 1660000000, &quot;founded_on&quot;: 2009, &quot;category&quot;: &quot;Transportation&quot;, &quot;post_money_val&quot;: 4200000000 }, { &quot;name&quot;: &quot;Intarcia Therapeutics&quot;, &quot;country&quot;: &quot;USA&quot;, &quot;last_funding_on&quot;: &quot;2017-09-01&quot;, &quot;total_equity_funding&quot;: 1400000000, &quot;founded_on&quot;: 1997, &quot;category&quot;: &quot;Health Care&quot;, &quot;post_money_val&quot;: 4100000000 } 技术架构 后端采用sails.js快速API，前端通过React+Bootstrap实现。
-项目代码 https://github.com/rangwei/unicorns-bootstrap
-  </div>
-  
-</article>
 
+    
+
+</article>
+          
+            <article class="post-preview">
+    <a href="https://peaceful-tor-92061.herokuapp.com/posts/react%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B06-%E5%BF%AB%E9%80%9F%E6%9E%84%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%8A%A8%E6%80%81%E5%85%A8%E7%90%83%E7%8B%AC%E8%A7%92%E5%85%BD%E5%88%97%E8%A1%A8%E7%BD%91%E7%AB%991/">
+        <h2 class="post-title">React学习笔记6</h2>
+        
+        
+        
+    </a>
+
+    <p class="post-meta">
+        <span class="post-meta">
   
-  <hr/>
-  <article>
-  <header>
-    <h2><a href="/posts/react%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B05-todo-app/">React学习笔记5</a></h2>
-    <div class="post-meta clearfix">
-      <div class="post-date pull-left">
-        Posted on
-        <time datetime="2020-02-05T09:38:48&#43;08:00">
-          Feb 5, 2020
-        </time>
-      </div>
+  
+  <i class="fas fa-calendar"></i>&nbsp;Posted on February 6, 2020
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;minutes
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;51&nbsp;words
+  
+  
+    
+      &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;RANG
+    
+  
+  
+</span>
+
+
+    </p>
+    <div class="post-entry">
+        
+        <p>React学习笔记6-快速构建一个动态全球独角兽列表网站(1)</p>
+<h1 id="设计和架构">设计和架构</h1>
+<p>下面来通过React实战构建一个关于全球独角兽列表的网站。
+主要就是作为一个小练习实践一下从前端到后端的web开发技术。</p>
+<h2 id="界面设计">界面设计</h2>
+<p>最快的方式当然直接用Bootstrap搞定，大概如下：</p>
+<p>网页布局主要包含三个部分：导航栏， 主要内容，翻页条。</p>
+<p>React的翻页功能有很多库已经可以直接用，但是出于学习的目的，这里还是手工写一个，逻辑也不复杂。</p>
+<h2 id="后台数据格式">后台数据格式</h2>
+<p>数据结构比较简单，从网上抓取的，主要包含：
+独角兽名称，国家，最后一轮融资日期，总融资金额，创建年份，类别，估值，数据示例：</p>
+<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">{
+    &#34;name&#34;: &#34;BAIC BJEV&#34;,
+    &#34;country&#34;: &#34;CHN&#34;,
+    &#34;last_funding_on&#34;: &#34;2017-08-01&#34;,
+    &#34;total_equity_funding&#34;: 1660000000,
+    &#34;founded_on&#34;: 2009,
+    &#34;category&#34;: &#34;Transportation&#34;,
+    &#34;post_money_val&#34;: 4200000000
+  },
+  {
+    &#34;name&#34;: &#34;Intarcia Therapeutics&#34;,
+    &#34;country&#34;: &#34;USA&#34;,
+    &#34;last_funding_on&#34;: &#34;2017-09-01&#34;,
+    &#34;total_equity_funding&#34;: 1400000000,
+    &#34;founded_on&#34;: 1997,
+    &#34;category&#34;: &#34;Health Care&#34;,
+    &#34;post_money_val&#34;: 4100000000
+  }
+</code></pre></div><h2 id="技术架构">技术架构</h2>
+<p>后端采用sails.js快速API，前端通过React+Bootstrap实现。</p>
+<h2 id="项目代码">项目代码</h2>
+<p><a href="https://github.com/rangwei/unicorns-bootstrap">https://github.com/rangwei/unicorns-bootstrap</a></p>
+
+        
     </div>
-  </header>
-  <div>
-    TODO App  三人行，必有我师焉。择其善者而从之，其不善者而改之。 ——孔子
+
+    
+
+</article>
+          
+            <article class="post-preview">
+    <a href="https://peaceful-tor-92061.herokuapp.com/posts/react%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B05-todo-app/">
+        <h2 class="post-title">React学习笔记5</h2>
+        
+        
+        
+    </a>
+
+    <p class="post-meta">
+        <span class="post-meta">
+  
+  
+  <i class="fas fa-calendar"></i>&nbsp;Posted on February 5, 2020
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;minutes
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;210&nbsp;words
+  
+  
+    
+      &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;RANG
+    
+  
+  
+</span>
+
+
+    </p>
+    <div class="post-entry">
+        
+        TODO App  三人行，必有我师焉。择其善者而从之，其不善者而改之。 ——孔子
  现在通过前面学到的React基础知识快速构建一个简单的TODO APP。
 主要包含三个部分： 输入部分，未完成的事项，已经完成事项。
-输入部分 function Input({ addName }) { const [name, setName] = useState(&quot;hello&quot;); return ( &lt;div&gt; &lt;h1&gt;todo App&lt;/h1&gt; &lt;br /&gt; &lt;input type=&quot;text&quot; name=&quot;&quot; value={name} onChange={(e) =&gt; setName(e.target.value)} /&gt; &lt;button type=&quot;button&quot; name=&quot;button&quot; onClick={() =&gt; addName(name)}&gt;add todo&lt;/button&gt; &lt;/div&gt; ); } 输入部分包含一个输入框和一个按钮。
-未完成事项 function TodoList({ list, change }) { return ( &lt;ul&gt; {list.map(item =&gt; &lt;li&gt;&lt;input type=&quot;checkbox&quot; name=&quot;&quot; checked={item.completed} value={item.name} onChange={(e) =&gt; change(e.target.value)} /&gt;{item.name}&lt;/li&gt;)} &lt;/ul&gt; ); } 未完成部分是一个列表每一行包含了一个复选框和内容。
-  </div>
-  
-  <footer>
-    <ul class="pager">
-      <li class="next"><a href="/posts/react%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B05-todo-app/">Read more <span aria-hidden="true">&raquo;</span></a></li>
-    </ul>
-  </footer>
-  
-</article>
-
-  
-  <hr/>
-  <article>
-  <header>
-    <h2><a href="/posts/react%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B04-effect-hooks/">React学习笔记4</a></h2>
-    <div class="post-meta clearfix">
-      <div class="post-date pull-left">
-        Posted on
-        <time datetime="2020-02-04T09:38:48&#43;08:00">
-          Feb 4, 2020
-        </time>
-      </div>
+输入部分 function Input({ addName }) { const [name, setName] = useState(&#34;hello&#34;); return ( &lt;div&gt; &lt;h1&gt;todo App&lt;/h1&gt; &lt;br /&gt; &lt;input type=&#34;text&#34; name=&#34;&#34; value={name} onChange={(e) =&gt; setName(e.target.value)} /&gt; &lt;button type=&#34;button&#34; name=&#34;button&#34; onClick={() =&gt; addName(name)}&gt;add todo&lt;/button&gt; &lt;/div&gt; ); } 输入部分包含一个输入框和一个按钮。
+未完成事项 function TodoList({ list, change }) { return ( &lt;ul&gt; {list.map(item =&gt; &lt;li&gt;&lt;input type=&#34;checkbox&#34; name=&#34;&#34; checked={item.completed} value={item.name} onChange={(e) =&gt; change(e.target.value)} /&gt;{item.name}&lt;/li&gt;)} &lt;/ul&gt; ); } 未完成部分是一个列表每一行包含了一个复选框和内容。
+        <a href="https://peaceful-tor-92061.herokuapp.com/posts/react%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B05-todo-app/" class="post-read-more">[Read More]</a>
+        
     </div>
-  </header>
-  <div>
-    Effect Hooks  由俭入奢易，由奢入俭难。——司马光
- 之前通过class来编写Component，一些辅助的方法是通过componentDidMount, componentDidUpdate来实现。通过React的effect hook可以实现类似的功能。
-比如现在在组件显示之前需要通过网络加载一下数据，还是通过之前用的users api来demo:
-import React, { useState, useEffect } from 'react'; export default function UserList () { const [users, setUsers] = useState([]); useEffect( () =&gt; { fetch('https://reqres.in/api/users') .then(res =&gt; res.json()) .then(data =&gt; setUsers(data.data)) .catch(e =&gt; console.log(e)); }, [] ); return (&lt;ul&gt;{users.map(u =&gt; &lt;li&gt;{u.email}&lt;/li&gt;)}&lt;/ul&gt;); } 这里传给useEffect第二个参数为一个空数组，这样就表示只需要在初始化的时候运行即可，不用每次render都调用。
-参考阅读  https://reactjs.org/docs/hooks-effect.html  
-  </div>
-  
-</article>
 
+    
+
+</article>
+          
+            <article class="post-preview">
+    <a href="https://peaceful-tor-92061.herokuapp.com/posts/react%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B04-effect-hooks/">
+        <h2 class="post-title">React学习笔记4</h2>
+        
+        
+        
+    </a>
+
+    <p class="post-meta">
+        <span class="post-meta">
   
-  <hr/>
-  <article>
-  <header>
-    <h2><a href="/posts/react%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B03-state-hook/">React学习笔记3</a></h2>
-    <div class="post-meta clearfix">
-      <div class="post-date pull-left">
-        Posted on
-        <time datetime="2020-02-03T09:38:48&#43;08:00">
-          Feb 3, 2020
-        </time>
-      </div>
+  
+  <i class="fas fa-calendar"></i>&nbsp;Posted on February 4, 2020
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;minutes
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;52&nbsp;words
+  
+  
+    
+      &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;RANG
+    
+  
+  
+</span>
+
+
+    </p>
+    <div class="post-entry">
+        
+        <h1 id="effect-hooks">Effect Hooks</h1>
+<blockquote>
+<p>由俭入奢易，由奢入俭难。——司马光</p>
+</blockquote>
+<p>之前通过class来编写Component，一些辅助的方法是通过componentDidMount, componentDidUpdate来实现。通过React的effect hook可以实现类似的功能。</p>
+<p>比如现在在组件显示之前需要通过网络加载一下数据，还是通过之前用的users api来demo:</p>
+<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">import React, { useState, useEffect } from &#39;react&#39;;
+
+export default function UserList () {
+
+    const [users, setUsers] = useState([]);
+
+    useEffect(
+        () =&gt; {
+            fetch(&#39;https://reqres.in/api/users&#39;)
+            .then(res =&gt; res.json())
+            .then(data =&gt; setUsers(data.data))
+            .catch(e =&gt; console.log(e));
+        }, []
+    );
+
+    return (&lt;ul&gt;{users.map(u =&gt; &lt;li&gt;{u.email}&lt;/li&gt;)}&lt;/ul&gt;);
+}
+</code></pre></div><p>这里传给useEffect第二个参数为一个空数组，这样就表示只需要在初始化的时候运行即可，不用每次render都调用。</p>
+<h2 id="参考阅读">参考阅读</h2>
+<ul>
+<li><a href="https://reactjs.org/docs/hooks-effect.html">https://reactjs.org/docs/hooks-effect.html</a></li>
+</ul>
+
+        
     </div>
-  </header>
-  <div>
-    State Hook  吾生也有涯，而知也无涯。——庄子
+
+    
+
+</article>
+          
+            <article class="post-preview">
+    <a href="https://peaceful-tor-92061.herokuapp.com/posts/react%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B03-state-hook/">
+        <h2 class="post-title">React学习笔记3</h2>
+        
+        
+        
+    </a>
+
+    <p class="post-meta">
+        <span class="post-meta">
+  
+  
+  <i class="fas fa-calendar"></i>&nbsp;Posted on February 3, 2020
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;minutes
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;109&nbsp;words
+  
+  
+    
+      &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;RANG
+    
+  
+  
+</span>
+
+
+    </p>
+    <div class="post-entry">
+        
+        State Hook  吾生也有涯，而知也无涯。——庄子
  接着学习一下React的State Hook。
 通过State hook，可以直接通过function来构建有状态的组件，只要引入useState方法即可。
 写了一个小例子，包含一个输入和列表，分别通过两个function实现。 输入的数据通过一个列表展示：
-import React, { useState } from 'react'; function Input({ addName }) { const [name, setName] = useState(&quot;hello&quot;); return ( &lt;div&gt; &lt;label for=&quot;&quot;&gt;name&lt;/label&gt; &lt;input type=&quot;text&quot; name=&quot;&quot; value={name} onChange={(e) =&gt; { setName(e.target.value) }} /&gt; &lt;button type=&quot;button&quot; name=&quot;button&quot; onClick={() =&gt; { addName(name); }}&gt;click me!&lt;/button&gt; &lt;/div&gt; ); } function List({ nameList }) { return ( &lt;ul&gt; {nameList.map(n =&gt; &lt;li&gt;{n}&lt;/li&gt;)} &lt;/ul&gt; ); } function NameTool() { const [list, setList] = useState([]); const add = name =&gt; { const newList = [.
-  </div>
-  
-  <footer>
-    <ul class="pager">
-      <li class="next"><a href="/posts/react%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B03-state-hook/">Read more <span aria-hidden="true">&raquo;</span></a></li>
-    </ul>
-  </footer>
-  
-</article>
+import React, { useState } from &#39;react&#39;; function Input({ addName }) { const [name, setName] = useState(&#34;hello&#34;); return ( &lt;div&gt; &lt;label for=&#34;&#34;&gt;name&lt;/label&gt; &lt;input type=&#34;text&#34; name=&#34;&#34; value={name} onChange={(e) =&gt; { setName(e.target.value) }} /&gt; &lt;button type=&#34;button&#34; name=&#34;button&#34; onClick={() =&gt; { addName(name); }}&gt;click me!&lt;/button&gt; &lt;/div&gt; ); } function List({ nameList }) { return ( &lt;ul&gt; {nameList.map(n =&gt; &lt;li&gt;{n}&lt;/li&gt;)} &lt;/ul&gt; ); } function NameTool() { const [list, setList] = useState([]); const add = name =&gt; { const newList = [.
+        <a href="https://peaceful-tor-92061.herokuapp.com/posts/react%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B03-state-hook/" class="post-read-more">[Read More]</a>
+        
+    </div>
 
-  
-  <hr/>
-  <article>
-  <header>
-    <h2><a href="/posts/react%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B02-function-component/">React学习笔记2</a></h2>
-    <div class="post-meta clearfix">
-      <div class="post-date pull-left">
-        Posted on
-        <time datetime="2020-02-02T09:38:48&#43;08:00">
-          Feb 2, 2020
-        </time>
+    
+
+</article>
+          
+        </div>
+        
+          <ul class="pager main-pager">
+            
+            
+              <li class="next">
+                <a href="https://peaceful-tor-92061.herokuapp.com/posts/page/2/">Older Posts &rarr;</a>
+              </li>
+            
+          </ul>
+        
       </div>
     </div>
-  </header>
-  <div>
-    Function Component  学无止境。——荀子
- 接着学习一下React的function component。
-之前React主要通过class的方式来构建UI组件，但是可能在很多项目中存在一些弊端。Facebook设计了React Hook的方式，可以不通过class的方式来完成同样的功能。也就是只需要通过function component即可，这样带来的好处是代码更简单，bug更少。
-简单的Component 先看看一个简单的function component:
-import React from 'react'; function Welcome({name}) { return &lt;h1&gt;{name}&lt;/h1&gt;; } function App() { return ( &lt;Welcome name=&quot;abc&quot;/&gt; ); } export default App; 这里Welcome({name})用到了destructing解析赋值的语法。
-Component组合 function component 可以组合， 把之前做的问卷调查小Demo重构一下：
-import React, { useState } from 'react'; function Question({question, name, change}) { return ( &lt;div&gt; &lt;label for=&quot;&quot;&gt;{question}&lt;/label&gt; &lt;input type=&quot;radio&quot; id=&quot;1&quot; name={name} value=&quot;0&quot; onChange={change}/&gt; &lt;label for=&quot;&quot;&gt;超级满意&lt;/label&gt; &lt;input type=&quot;radio&quot; id=&quot;2&quot; name={name} value=&quot;1&quot; onChange={change}/&gt; &lt;label for=&quot;&quot;&gt;比较满意&lt;/label&gt; &lt;input type=&quot;radio&quot; id=&quot;3&quot; name={name} value=&quot;2&quot; onChange={change}/&gt; &lt;label for=&quot;&quot;&gt;满意&lt;/label&gt; &lt;input type=&quot;radio&quot; id=&quot;4&quot; name={name} value=&quot;3&quot; onChange={change}/&gt; &lt;label for=&quot;&quot;&gt;不满意&lt;/label&gt; &lt;input type=&quot;radio&quot; id=&quot;5&quot; name={name} value=&quot;4&quot; onChange={change}/&gt; &lt;label for=&quot;&quot;&gt;超级不满意&lt;/label&gt; &lt;/div&gt; ); } function SimpleSurvey({questions}) { let result = []; for (let q in questions) { result.
   </div>
-  
-  <footer>
-    <ul class="pager">
-      <li class="next"><a href="/posts/react%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B02-function-component/">Read more <span aria-hidden="true">&raquo;</span></a></li>
-    </ul>
-  </footer>
-  
-</article>
 
-  
-  <hr/>
-  <article>
-  <header>
-    <h2><a href="/posts/react%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B01-hello-react/">React学习笔记1</a></h2>
-    <div class="post-meta clearfix">
-      <div class="post-date pull-left">
-        Posted on
-        <time datetime="2020-02-01T09:38:48&#43;08:00">
-          Feb 1, 2020
-        </time>
+      
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links">
+          
+              <li>
+                <a href="mailto:rangwei@gmail.com" title="Email me">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/username" title="Facebook">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-facebook fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/rangwei" title="GitHub">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://gitlab.com/username" title="GitLab">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-gitlab fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://bitbucket.org/username" title="Bitbucket">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-bitbucket fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com/username" title="Twitter">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://username.slack.com/" title="Slack">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-slack fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://reddit.com/u/username" title="Reddit">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-reddit-alien fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://linkedin.com/in/username" title="LinkedIn">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.xing.com/profile/username" title="Xing">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-xing fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://stackoverflow.com/users/XXXXXXX/username" title="StackOverflow">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-stack-overflow fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.snapchat.com/add/username" title="Snapchat">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-snapchat-ghost fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/username" title="Instagram">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-instagram fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/user/username" title="Youtube">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-youtube fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://soundcloud.com/username" title="SoundCloud">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-soundcloud fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://open.spotify.com/user/username" title="Spotify">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-spotify fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://username.bandcamp.com/" title="Bandcamp">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-bandcamp fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://itch.io/profile/username" title="Itch.io">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fas fa-gamepad fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://vk.com/username" title="VK">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-vk fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://paypal.me/username" title="PayPal">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-paypal fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://telegram.me/username" title="Telegram">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-telegram fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://500px.com/username" title="500px">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-500px fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://codepen.io/username" title="CodePen">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-codepen fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.kaggle.com/username" title="kaggle">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-kaggle fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://url" title="Mastodon">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-mastodon fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://weibo.com/username" title="Weibo">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-weibo fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+          
+          <li>
+            <a href="/posts/index.xml" title="RSS">
+              <span class="fa-stack fa-lg">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fas fa-rss fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+        </ul>
+        <p class="credits copyright text-muted">
+          
+            
+              <a href="blogs.csdn.net/starshus">RANG</a>
+            
+          
+
+          &nbsp;&bull;&nbsp;&copy;
+          
+            2020
+          
+
+          
+            &nbsp;&bull;&nbsp;
+            <a href="https://peaceful-tor-92061.herokuapp.com/">React learning blogs</a>
+          
+        </p>
+        
+        <p class="credits theme-by text-muted">
+          <a href="https://gohugo.io">Hugo v0.64.0</a> powered &nbsp;&bull;&nbsp; Theme <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a> adapted from <a href="https://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a>
+          
+        </p>
       </div>
     </div>
-  </header>
-  <div>
-    Hello React, Hello JavaScript!  千里之行，始于足下。——老子
- 最近体验了一下著名的前端框架React，用起来特别爽，个人很喜欢。所以准备花一点点时间深入学习一下React。在这里把学习得过程也顺便记录下来。
-要学习React的话，先了解一下JavaScript的基础知识是非常有帮助的。JavaScript也是是目前非常火的编程语言，在有了Node.js以后，JS终于可以从前端到后端一统天下了。如果熟悉了JS以后，学习React非常简单。
-JS也很简单，基本语法快速浏览一下就差不多了。但是JS作为一门动态语言，也有很多非常有意思得特性。首先看几个React里会用到的JS语法。
-destructing 解构赋值 这是一个很方便的用法：
-let arr = ['a', 'b']; let [first, last] = arr; console.log(first);//a console.log(last); //b 数组的复制 在JS中，数组的变量是引用传递，在下面的例子可以测试。
-在ES6中，有一个比较快捷的语法x = [&hellip;y]可以拷贝一个新的数组。
-const rows = [0, 1, 2]; const copy = rows; rows.push(3); console.log(copy); //0, 1, 2, 3 const deepCopy = [...rows]; console.log(deepCopy); //0, 1, 2, 3 rows.push(4); console.log(deepCopy); //0, 1, 2, 3 箭头函数 箭头函数大家就非常熟悉了，在JS中，通过箭头函数能把代码写得非常简洁。
-在对象中，有一个细微的地方需要注意，箭头函数默认是没有绑定this的。看下面这个例子：
-const user = { name: 'Jacky', sayHello() { console.
   </div>
-  
-  <footer>
-    <ul class="pager">
-      <li class="next"><a href="/posts/react%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B01-hello-react/">Read more <span aria-hidden="true">&raquo;</span></a></li>
-    </ul>
-  </footer>
-  
-</article>
+</footer><script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.js" integrity="sha384-K3vbOmF2BtaVai+Qk37uypf7VrgBubhQreNQe9aGsz9lB63dIFiQVlJbr92dw2Lx" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/contrib/auto-render.min.js" integrity="sha384-kmZOZB5ObwgQnS/DuDg6TScgOiWWBiVt0plIRkZCmE6rDZGrEOQeHM5PcHi+nyqe" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-  
-</section>
-  </main>
-  <footer class="container global-footer">
-    <div class="copyright-note pull-left">
-      &copy; Copyright notice
-    </div>
-    <div class="sns-links hidden-print">
-  
-  <a href="#ZgotmplZ">
-    <i class="fa fa-envelope"></i>
-  </a>
-  
-  
-  <a href="https://twitter.com/rang" target="_blank">
-    <i class="fa fa-twitter"></i>
-  </a>
-  
-  
-  <a href="https://instagram.com/Your%20Instagram%20username" target="_blank">
-    <i class="fa fa-instagram"></i>
-  </a>
-  
-  
-  <a href="https://plus.google.com/+Your%20Google&#43;%20user%20id" target="_blank">
-    <i class="fa fa-google"></i>
-  </a>
-  
-  
-  <a href="https://facebook.com/Your%20Facebook%20username" target="_blank">
-    <i class="fa fa-facebook"></i>
-  </a>
-  
-  
-  <a href="https://github.com/rangwei" target="_blank">
-    <i class="fa fa-github"></i>
-  </a>
-  
-  
-  <a href="https://gitlab.com/Your%20GitLab%20username" target="_blank">
-    <i class="fa fa-gitlab"></i>
-  </a>
-  
-  
-  <a href="https://reddit.com/user/Your%20Reddit%20username" target="_blank">
-    <i class="fa fa-reddit-alien"></i>
-  </a>
-  
-  
-  <a href="https://news.ycombinator.com/user?id=Your%20Hacker%20News%20username" target="_blank">
-    <i class="fa fa-hacker-news"></i>
-  </a>
-  
-  
-  <a href="https://stackoverflow.com/users/Your%20Stackoverflow%20user%20id%20%28number%29" target="_blank">
-    <i class="fa fa-stack-overflow"></i>
-  </a>
-  
-  
-  <a href="https://linkedin.com/in/Your%20LinkedIn%20username" target="_blank">
-    <i class="fa fa-linkedin"></i>
-  </a>
-  
-  
-  <a href="https://keybase.io/Your%20keybase.io%20username" target="_blank">
-    <i class="fa fa-key"></i>
-  </a>
-  
-</div>
+<script src="https://peaceful-tor-92061.herokuapp.com/js/main.js"></script>
+<script src="https://peaceful-tor-92061.herokuapp.com/js/highlight.min.js"></script>
+<script> hljs.initHighlightingOnLoad(); </script>
+<script> $(document).ready(function() {$("pre.chroma").css("padding","0");}); </script><script> renderMathInElement(document.body); </script><script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.js" integrity="sha384-QELNnmcmU8IR9ZAykt67vGr9/rZJdHbiWi64V88fCPaOohUlHCqUD/unNN0BXSqy" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe-ui-default.min.js" integrity="sha384-m67o7SkQ1ALzKZIFh4CiTA8tmadaujiTa9Vu+nqPSwDOqHrDmxLezTdFln8077+q" crossorigin="anonymous"></script><script src="https://peaceful-tor-92061.herokuapp.com/js/load-photoswipe.js"></script>
 
-  </footer>
 
-  <script src="js/highlight.pack.js"></script>
-  <script>
-    hljs.initHighlightingOnLoad();
-  </script>
-  
-  <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-    ga('create', 'Your Google Analytics tracking id', 'auto');
-    ga('send', 'pageview');
-  </script>
-  
-  
-  <script type="text/javascript">(function(f,b){if(!b.__SV){var a,e,i,g;window.mixpanel=b;b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.track_charge people.clear_charges people.delete_user".split(" ");
-  for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,e,d])};b.__SV=1.2;a=f.createElement("script");a.type="text/javascript";a.async=!0;a.src="//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";e=f.getElementsByTagName("script")[0];e.parentNode.insertBefore(a,e)}})(document,window.mixpanel||[]);
-  mixpanel.init("Your Mixpanel API key");</script>
-  
-</body>
+
+
+
+
+
+
+
+    
+  </body>
 </html>
-
 

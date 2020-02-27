@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on My React Learning Blogs</title>
-    <link>/tags/</link>
-    <description>Recent content in Tags on My React Learning Blogs</description>
+    <title>Tags on React learning blogs</title>
+    <link>https://peaceful-tor-92061.herokuapp.com/tags/</link>
+    <description>Recent content in Tags on React learning blogs</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>&amp;copy; Copyright notice</copyright>
+    <managingEditor>rangwei@gmail.com (RANG)</managingEditor>
+    <webMaster>rangwei@gmail.com (RANG)</webMaster>
     
-	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://peaceful-tor-92061.herokuapp.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>

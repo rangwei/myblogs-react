@@ -1,24 +1,26 @@
 {
-  "name": "quickstart",
+  "name": "myblogs-react",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {},
   "scripts": {
-    "start": "node server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rangwei/blogs-quickstart.git"
+    "url": "git+https://github.com/rangwei/myblogs-react.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/rangwei/blogs-quickstart/issues"
+    "url": "https://github.com/rangwei/myblogs-react/issues"
   },
-  "homepage": "https://github.com/rangwei/blogs-quickstart#readme",
-  "dependencies": {
-    "express": "^4.17.1"
-  }
+  "homepage": "https://github.com/rangwei/myblogs-react#readme"
 }
