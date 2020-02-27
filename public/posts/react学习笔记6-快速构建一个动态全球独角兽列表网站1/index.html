@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head prefix="og: http://ogp.me/ns#">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+  <meta property="og:title" content=" React学习笔记6 &middot;  My React Learning Blogs" />
+  
+  <meta name="theme-color" content="#hexcolor" />
+ 
+  <meta property="og:site_name" content="My React Learning Blogs" />
+  <meta property="og:url" content="/posts/react%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B06-%E5%BF%AB%E9%80%9F%E6%9E%84%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%8A%A8%E6%80%81%E5%85%A8%E7%90%83%E7%8B%AC%E8%A7%92%E5%85%BD%E5%88%97%E8%A1%A8%E7%BD%91%E7%AB%991/" />
+  
+  
+  <meta property="og:type" content="article" />
+  
+  <meta property="og:article:author" content="https://facebook.com/Your Facebook username" />
+  
+  <meta property="og:article:published_time" content="2020-02-06T09:38:48&#43;08:00" />
+  
+  
+
+  <title>
+     React学习笔记6 &middot;  My React Learning Blogs
+  </title>
+
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/font-awesome.min.css" />
+  <link rel="stylesheet" href="css/github.css" />
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400" type="text/css">
+  <link rel="shortcut icon" href="images/favicon.ico" />
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
+  
+</head>
+<body>
+    <header class="global-header"  style="background-image:url( /images/bg.jpg )">
+    <section class="header-text">
+      <h1><a href="">My React Learning Blogs</a></h1>
+      
+      <div class="tag-line">
+        千里之行，始于足下。——老子
+      </div>
+      
+      <div class="sns-links hidden-print">
+  
+  <a href="#ZgotmplZ">
+    <i class="fa fa-envelope"></i>
+  </a>
+  
+  
+  <a href="https://twitter.com/rang" target="_blank">
+    <i class="fa fa-twitter"></i>
+  </a>
+  
+  
+  <a href="https://instagram.com/Your%20Instagram%20username" target="_blank">
+    <i class="fa fa-instagram"></i>
+  </a>
+  
+  
+  <a href="https://plus.google.com/+Your%20Google&#43;%20user%20id" target="_blank">
+    <i class="fa fa-google"></i>
+  </a>
+  
+  
+  <a href="https://facebook.com/Your%20Facebook%20username" target="_blank">
+    <i class="fa fa-facebook"></i>
+  </a>
+  
+  
+  <a href="https://github.com/rangwei" target="_blank">
+    <i class="fa fa-github"></i>
+  </a>
+  
+  
+  <a href="https://gitlab.com/Your%20GitLab%20username" target="_blank">
+    <i class="fa fa-gitlab"></i>
+  </a>
+  
+  
+  <a href="https://reddit.com/user/Your%20Reddit%20username" target="_blank">
+    <i class="fa fa-reddit-alien"></i>
+  </a>
+  
+  
+  <a href="https://news.ycombinator.com/user?id=Your%20Hacker%20News%20username" target="_blank">
+    <i class="fa fa-hacker-news"></i>
+  </a>
+  
+  
+  <a href="https://stackoverflow.com/users/Your%20Stackoverflow%20user%20id%20%28number%29" target="_blank">
+    <i class="fa fa-stack-overflow"></i>
+  </a>
+  
+  
+  <a href="https://linkedin.com/in/Your%20LinkedIn%20username" target="_blank">
+    <i class="fa fa-linkedin"></i>
+  </a>
+  
+  
+  <a href="https://keybase.io/Your%20keybase.io%20username" target="_blank">
+    <i class="fa fa-key"></i>
+  </a>
+  
+</div>
+
+      
+      <a href="" class="btn-header btn-back hidden-xs">
+        <i class="fa fa-angle-left" aria-hidden="true"></i>
+        &nbsp;Home
+      </a>
+      
+      
+    </section>
+  </header>
+  <main class="container">
+
+
+<article>
+  <header>
+    <h1 class="text-primary">React学习笔记6</h1>
+    <div class="post-meta clearfix">
+    
+      <div class="post-date pull-left">
+        Posted on
+        <time datetime="2020-02-06T09:38:48&#43;08:00">
+          Feb 6, 2020
+        </time>
+      </div>
+    
+      <div class="pull-right">
+        
+      </div>
+    </div>
+  </header>
+  <section>
+    <p>React学习笔记6-快速构建一个动态全球独角兽列表网站(1)</p>
+<h1 id="设计和架构">设计和架构</h1>
+<p>下面来通过React实战构建一个关于全球独角兽列表的网站。
+主要就是作为一个小练习实践一下从前端到后端的web开发技术。</p>
+<h2 id="界面设计">界面设计</h2>
+<p>最快的方式当然直接用Bootstrap搞定，大概如下：</p>
+<p>网页布局主要包含三个部分：导航栏， 主要内容，翻页条。</p>
+<p>React的翻页功能有很多库已经可以直接用，但是出于学习的目的，这里还是手工写一个，逻辑也不复杂。</p>
+<h2 id="后台数据格式">后台数据格式</h2>
+<p>数据结构比较简单，从网上抓取的，主要包含：
+独角兽名称，国家，最后一轮融资日期，总融资金额，创建年份，类别，估值，数据示例：</p>
+<pre><code>{
+    &quot;name&quot;: &quot;BAIC BJEV&quot;,
+    &quot;country&quot;: &quot;CHN&quot;,
+    &quot;last_funding_on&quot;: &quot;2017-08-01&quot;,
+    &quot;total_equity_funding&quot;: 1660000000,
+    &quot;founded_on&quot;: 2009,
+    &quot;category&quot;: &quot;Transportation&quot;,
+    &quot;post_money_val&quot;: 4200000000
+  },
+  {
+    &quot;name&quot;: &quot;Intarcia Therapeutics&quot;,
+    &quot;country&quot;: &quot;USA&quot;,
+    &quot;last_funding_on&quot;: &quot;2017-09-01&quot;,
+    &quot;total_equity_funding&quot;: 1400000000,
+    &quot;founded_on&quot;: 1997,
+    &quot;category&quot;: &quot;Health Care&quot;,
+    &quot;post_money_val&quot;: 4100000000
+  }
+</code></pre><h2 id="技术架构">技术架构</h2>
+<p>后端采用sails.js快速API，前端通过React+Bootstrap实现。</p>
+<h2 id="项目代码">项目代码</h2>
+<p><a href="https://github.com/rangwei/unicorns-bootstrap">https://github.com/rangwei/unicorns-bootstrap</a></p>
+
+  </section>
+  <footer>
+    
+    
+    <hr/>
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+      var disqus_shortname = 'Your disqus shortname';
+      (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    
+    
+    <section class="author-info row">
+      <div class="author-avatar col-md-2">
+        
+        <img alt="Author Avatar" src="/path/to/avatar" />
+        
+      </div>
+      <div class="author-meta col-md-6">
+        
+        <h1 class="author-name text-primary">RANG</h1>
+        
+        
+        <div class="author-bio">Your short bio</div>
+        
+      </div>
+      
+      <div class="author-contact col-md-4">
+        <a href="#ZgotmplZ">
+          <i class="fa fa-envelope-o" aria-hidden="true"></i>
+          &nbsp;Contact me
+        </a>
+      </div>
+      
+    </section>
+    <ul class="pager">
+      
+      <li class="previous"><a href="/posts/react%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B07-%E5%BF%AB%E9%80%9F%E6%9E%84%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%8A%A8%E6%80%81%E5%85%A8%E7%90%83%E7%8B%AC%E8%A7%92%E5%85%BD%E5%88%97%E8%A1%A8%E7%BD%91%E7%AB%992/"><span aria-hidden="true">&larr;</span> Older</a></li>
+      
+      
+      <li class="next"><a href="/posts/react%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B05-todo-app/">Newer <span aria-hidden="true">&rarr;</span></a></li>
+      
+    </ul>
+  </footer>
+</article>
+
+  </main>
+  <footer class="container global-footer">
+    <div class="copyright-note pull-left">
+      &copy; Copyright notice
+    </div>
+    <div class="sns-links hidden-print">
+  
+  <a href="#ZgotmplZ">
+    <i class="fa fa-envelope"></i>
+  </a>
+  
+  
+  <a href="https://twitter.com/rang" target="_blank">
+    <i class="fa fa-twitter"></i>
+  </a>
+  
+  
+  <a href="https://instagram.com/Your%20Instagram%20username" target="_blank">
+    <i class="fa fa-instagram"></i>
+  </a>
+  
+  
+  <a href="https://plus.google.com/+Your%20Google&#43;%20user%20id" target="_blank">
+    <i class="fa fa-google"></i>
+  </a>
+  
+  
+  <a href="https://facebook.com/Your%20Facebook%20username" target="_blank">
+    <i class="fa fa-facebook"></i>
+  </a>
+  
+  
+  <a href="https://github.com/rangwei" target="_blank">
+    <i class="fa fa-github"></i>
+  </a>
+  
+  
+  <a href="https://gitlab.com/Your%20GitLab%20username" target="_blank">
+    <i class="fa fa-gitlab"></i>
+  </a>
+  
+  
+  <a href="https://reddit.com/user/Your%20Reddit%20username" target="_blank">
+    <i class="fa fa-reddit-alien"></i>
+  </a>
+  
+  
+  <a href="https://news.ycombinator.com/user?id=Your%20Hacker%20News%20username" target="_blank">
+    <i class="fa fa-hacker-news"></i>
+  </a>
+  
+  
+  <a href="https://stackoverflow.com/users/Your%20Stackoverflow%20user%20id%20%28number%29" target="_blank">
+    <i class="fa fa-stack-overflow"></i>
+  </a>
+  
+  
+  <a href="https://linkedin.com/in/Your%20LinkedIn%20username" target="_blank">
+    <i class="fa fa-linkedin"></i>
+  </a>
+  
+  
+  <a href="https://keybase.io/Your%20keybase.io%20username" target="_blank">
+    <i class="fa fa-key"></i>
+  </a>
+  
+</div>
+
+  </footer>
+
+  <script src="js/highlight.pack.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad();
+  </script>
+  
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'Your Google Analytics tracking id', 'auto');
+    ga('send', 'pageview');
+  </script>
+  
+  
+  <script type="text/javascript">(function(f,b){if(!b.__SV){var a,e,i,g;window.mixpanel=b;b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.track_charge people.clear_charges people.delete_user".split(" ");
+  for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,e,d])};b.__SV=1.2;a=f.createElement("script");a.type="text/javascript";a.async=!0;a.src="//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";e=f.getElementsByTagName("script")[0];e.parentNode.insertBefore(a,e)}})(document,window.mixpanel||[]);
+  mixpanel.init("Your Mixpanel API key");</script>
+  
+</body>
+</html>
+

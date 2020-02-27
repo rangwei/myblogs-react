@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>My React Learning Blogs</title>
+    <link>/</link>
+    <description>Recent content on My React Learning Blogs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; Copyright notice</copyright>
+    <lastBuildDate>Wed, 12 Feb 2020 09:38:48 +0800</lastBuildDate>
+    
+	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>React学习笔记12</title>
+      <link>/posts/react%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B012-%E5%BF%AB%E9%80%9F%E6%9E%84%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%8A%A8%E6%80%81%E5%85%A8%E7%90%83%E7%8B%AC%E8%A7%92%E5%85%BD%E5%88%97%E8%A1%A8%E7%BD%91%E7%AB%997/</link>
+      <pubDate>Wed, 12 Feb 2020 09:38:48 +0800</pubDate>
+      
+      <guid>/posts/react%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B012-%E5%BF%AB%E9%80%9F%E6%9E%84%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%8A%A8%E6%80%81%E5%85%A8%E7%90%83%E7%8B%AC%E8%A7%92%E5%85%BD%E5%88%97%E8%A1%A8%E7%BD%91%E7%AB%997/</guid>
+      <description>后台管理开发 后台管理开发也很简单，和前台的开发思路其实差不多，就是增加了几个页面。 新建数据、编辑数据、删除数据。
+数据展示 在列表中生成了两个链接，分别是编辑和删除。
+return ( &amp;lt;div id=&amp;quot;content-wrapper&amp;quot; class=&amp;quot;mui--text-center&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;mui--appbar-height&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;br /&amp;gt; &amp;lt;br /&amp;gt; &amp;lt;div class=&amp;quot;mui--text-display3&amp;quot;&amp;gt;Global Unicorn&amp;lt;/div&amp;gt; &amp;lt;br /&amp;gt; &amp;lt;br /&amp;gt; &amp;lt;table className=&amp;quot;mui-table&amp;quot;&amp;gt; &amp;lt;thead&amp;gt; &amp;lt;tr&amp;gt; &amp;lt;td&amp;gt;id&amp;lt;/td&amp;gt; &amp;lt;td&amp;gt;name&amp;lt;/td&amp;gt; &amp;lt;td&amp;gt;country&amp;lt;/td&amp;gt; &amp;lt;td&amp;gt;last_funding_on&amp;lt;/td&amp;gt; &amp;lt;td&amp;gt;total_equity_funding&amp;lt;/td&amp;gt; &amp;lt;td&amp;gt;founded_on&amp;lt;/td&amp;gt; &amp;lt;td&amp;gt;category&amp;lt;/td&amp;gt; &amp;lt;td&amp;gt;post_money_val&amp;lt;/td&amp;gt; &amp;lt;td&amp;gt;operation&amp;lt;/td&amp;gt; &amp;lt;/tr&amp;gt; &amp;lt;/thead&amp;gt; &amp;lt;tbody&amp;gt; { this.props.data.map( u =&amp;gt; &amp;lt;tr&amp;gt; &amp;lt;td&amp;gt;{u.id}&amp;lt;/td&amp;gt; &amp;lt;td&amp;gt;{u.name}&amp;lt;/td&amp;gt; &amp;lt;td&amp;gt;{u.country}&amp;lt;/td&amp;gt; &amp;lt;td&amp;gt;{u.last_funding_on}&amp;lt;/td&amp;gt; &amp;lt;td&amp;gt;{u.total_equity_funding}&amp;lt;/td&amp;gt; &amp;lt;td&amp;gt;{u.founded_on}&amp;lt;/td&amp;gt; &amp;lt;td&amp;gt;{u.category}&amp;lt;/td&amp;gt; &amp;lt;td&amp;gt;{u.post_money_val}&amp;lt;/td&amp;gt; &amp;lt;Link to={&amp;quot;/edit/&amp;quot; + u.id}&amp;gt;edit&amp;lt;/Link&amp;gt; | &amp;lt;a href=&amp;quot;#&amp;quot; onClick={() =&amp;gt; { this.props.delete(u.id) }}&amp;gt;delete&amp;lt;/a&amp;gt; &amp;lt;/tr&amp;gt; ) } &amp;lt;/tbody&amp;gt; &amp;lt;/table&amp;gt; &amp;lt;/div&amp;gt; ); 新建数据 通过axios发送一个post请求来删除数据。</description>
+    </item>
+    
+    <item>
+      <title>React学习笔记11</title>
+      <link>/posts/react%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B011-%E5%BF%AB%E9%80%9F%E6%9E%84%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%8A%A8%E6%80%81%E5%85%A8%E7%90%83%E7%8B%AC%E8%A7%92%E5%85%BD%E5%88%97%E8%A1%A8%E7%BD%91%E7%AB%996/</link>
+      <pubDate>Tue, 11 Feb 2020 09:38:48 +0800</pubDate>
+      
+      <guid>/posts/react%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B011-%E5%BF%AB%E9%80%9F%E6%9E%84%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%8A%A8%E6%80%81%E5%85%A8%E7%90%83%E7%8B%AC%E8%A7%92%E5%85%BD%E5%88%97%E8%A1%A8%E7%BD%91%E7%AB%996/</guid>
+      <description>后台管理设计 接下来通过React来做一个简单的后台管理应用。
+主要功能 完成后大致是这样子：
+  主界面显示完整信息。
+  有创建、修改、删除功能。
+  有翻页功能。
+  技术架构 前端用的是Bootstrap。这个后端程序，UI换一个简单的MUICSS，极简风格。 翻页就不自己写了，直接用了开源组件, ReactPaginate。
+参考阅读   https://www.muicss.com/
+  https://www.npmjs.com/package/react-paginate
+  </description>
+    </item>
+    
+    <item>
+      <title>React学习笔记10</title>
+      <link>/posts/react%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B010-%E5%BF%AB%E9%80%9F%E6%9E%84%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%8A%A8%E6%80%81%E5%85%A8%E7%90%83%E7%8B%AC%E8%A7%92%E5%85%BD%E5%88%97%E8%A1%A8%E7%BD%91%E7%AB%995/</link>
+      <pubDate>Mon, 10 Feb 2020 09:38:48 +0800</pubDate>
+      
+      <guid>/posts/react%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B010-%E5%BF%AB%E9%80%9F%E6%9E%84%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%8A%A8%E6%80%81%E5%85%A8%E7%90%83%E7%8B%AC%E8%A7%92%E5%85%BD%E5%88%97%E8%A1%A8%E7%BD%91%E7%AB%995/</guid>
+      <description>测试运行 主页 独角兽列表 翻页 项目代码  后端  https://github.com/rangwei/unicorns-sails
+ 前端  https://github.com/rangwei/unicorns-react-bootstrap</description>
+    </item>
+    
+    <item>
+      <title>React学习笔记9</title>
+      <link>/posts/react%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B09-%E5%BF%AB%E9%80%9F%E6%9E%84%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%8A%A8%E6%80%81%E5%85%A8%E7%90%83%E7%8B%AC%E8%A7%92%E5%85%BD%E5%88%97%E8%A1%A8%E7%BD%91%E7%AB%994/</link>
+      <pubDate>Sun, 09 Feb 2020 09:38:48 +0800</pubDate>
+      
+      <guid>/posts/react%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B09-%E5%BF%AB%E9%80%9F%E6%9E%84%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%8A%A8%E6%80%81%E5%85%A8%E7%90%83%E7%8B%AC%E8%A7%92%E5%85%BD%E5%88%97%E8%A1%A8%E7%BD%91%E7%AB%994/</guid>
+      <description>动态数据展示 Router 主程序代码，通过react-router-dom来实现页面的Router
+App.js：
+import React from &#39;react&#39;; import Navbar from &#39;./Navbar&#39;; import Unicorns from &#39;./Unicorns&#39;; import Main from &#39;./Main&#39;; import &#39;./master.css&#39;; import { BrowserRouter as Router, Route} from &amp;quot;react-router-dom&amp;quot;; function App() { return ( &amp;lt;Router&amp;gt; &amp;lt;Navbar/&amp;gt; &amp;lt;Route path=&amp;quot;/&amp;quot; exact component={Main} /&amp;gt; &amp;lt;Route path=&amp;quot;/unicorns/:page&amp;quot; component={Unicorns} /&amp;gt; &amp;lt;/Router&amp;gt; ); } export default App; 设置代理 修改package.json 增加：
+&amp;quot;proxy&amp;quot;: &amp;quot;http://localhost:1337&amp;quot; 这样React可以自动代理访问后台api服务。
+主页面和显示逻辑 设置了几个state，主要用于翻页和获取数据的逻辑，然后通过axios来获取数据，然后通过列表显示。
+Unicorns.js:
+import React, { useState, useEffect } from &#39;react&#39;; import List from &#39;.</description>
+    </item>
+    
+    <item>
+      <title>React学习笔记8</title>
+      <link>/posts/react%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B08-%E5%BF%AB%E9%80%9F%E6%9E%84%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%8A%A8%E6%80%81%E5%85%A8%E7%90%83%E7%8B%AC%E8%A7%92%E5%85%BD%E5%88%97%E8%A1%A8%E7%BD%91%E7%AB%993/</link>
+      <pubDate>Sat, 08 Feb 2020 09:38:48 +0800</pubDate>
+      
+      <guid>/posts/react%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B08-%E5%BF%AB%E9%80%9F%E6%9E%84%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%8A%A8%E6%80%81%E5%85%A8%E7%90%83%E7%8B%AC%E8%A7%92%E5%85%BD%E5%88%97%E8%A1%A8%E7%BD%91%E7%AB%993/</guid>
+      <description>页面开发 页面开发很简单。分为两个部分。 通过React的Function Component来实现列表和翻页条。
+列表显示 List.js:
+import React, { useState } from &#39;react&#39;; export default function List({unicorns}) { return ( &amp;lt;table class=&amp;quot;table table-light table-hover table-bordered&amp;quot;&amp;gt; &amp;lt;thead&amp;gt; &amp;lt;tr&amp;gt; &amp;lt;th scope=&amp;quot;col&amp;quot;&amp;gt;Name&amp;lt;/th&amp;gt; &amp;lt;th scope=&amp;quot;col&amp;quot;&amp;gt;Country&amp;lt;/th&amp;gt; &amp;lt;th scope=&amp;quot;col&amp;quot;&amp;gt;Founded on&amp;lt;/th&amp;gt; &amp;lt;th scope=&amp;quot;col&amp;quot;&amp;gt;Category&amp;lt;/th&amp;gt; &amp;lt;/tr&amp;gt; &amp;lt;/thead&amp;gt; &amp;lt;tbody&amp;gt; { unicorns.map( (item) =&amp;gt; &amp;lt;tr&amp;gt; &amp;lt;td&amp;gt;{item.name}&amp;lt;/td&amp;gt; &amp;lt;td&amp;gt;{item.country}&amp;lt;/td&amp;gt; &amp;lt;td&amp;gt;{item.founded_on}&amp;lt;/td&amp;gt; &amp;lt;td&amp;gt;{item.category}&amp;lt;/td&amp;gt; &amp;lt;/tr&amp;gt; ) } &amp;lt;/tbody&amp;gt; &amp;lt;/table&amp;gt; ); } 翻页条 根据当前的页面总数来展示，并且高亮显示当前页。
+Page.js:
+import React, { Component } from &#39;react&#39;; // import unicorns from &#39;./data/unicorns.json&#39;; import { Link } from &#39;react-router-dom&#39;; export default function Page(props) { const total = props.</description>
+    </item>
+    
+    <item>
+      <title>React学习笔记7</title>
+      <link>/posts/react%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B07-%E5%BF%AB%E9%80%9F%E6%9E%84%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%8A%A8%E6%80%81%E5%85%A8%E7%90%83%E7%8B%AC%E8%A7%92%E5%85%BD%E5%88%97%E8%A1%A8%E7%BD%91%E7%AB%992/</link>
+      <pubDate>Fri, 07 Feb 2020 09:38:48 +0800</pubDate>
+      
+      <guid>/posts/react%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B07-%E5%BF%AB%E9%80%9F%E6%9E%84%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%8A%A8%E6%80%81%E5%85%A8%E7%90%83%E7%8B%AC%E8%A7%92%E5%85%BD%E5%88%97%E8%A1%A8%E7%BD%91%E7%AB%992/</guid>
+      <description>后端API开发 通过Sails.js可以快速构建一个后端的服务。
+建模 通过下面这条命令来新建一个model:
+sails generate api Unicorns 建模，修改Unicorns.js:
+module.exports = { attributes: { name: { type: &#39;string&#39;, required: true }, country: { type: &#39;string&#39; }, last_funding_on: { type: &#39;string&#39;, columnType: &#39;date&#39; }, total_equity_funding: { type: &#39;number&#39; }, founded_on: { type: &#39;number&#39; }, category: { type: &#39;string&#39; }, post_money_val: { type: &#39;number&#39; } }, }; 对于数据的CRUD操作，Sails.js的Bluprint立刻自动生成了RESTFul的API。 可以通过http://localhost:1337/Unicorns来访问服务。
+数据库中导入数据 通过下面这条命令来新建一个action:
+sails generate action import import.js:
+const data = require(&#39;../../tools/unicorns&#39;); module.exports = { friendlyName: &#39;Import&#39;, description: &#39;Import something.</description>
+    </item>
+    
+    <item>
+      <title>React学习笔记6</title>
+      <link>/posts/react%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B06-%E5%BF%AB%E9%80%9F%E6%9E%84%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%8A%A8%E6%80%81%E5%85%A8%E7%90%83%E7%8B%AC%E8%A7%92%E5%85%BD%E5%88%97%E8%A1%A8%E7%BD%91%E7%AB%991/</link>
+      <pubDate>Thu, 06 Feb 2020 09:38:48 +0800</pubDate>
+      
+      <guid>/posts/react%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B06-%E5%BF%AB%E9%80%9F%E6%9E%84%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%8A%A8%E6%80%81%E5%85%A8%E7%90%83%E7%8B%AC%E8%A7%92%E5%85%BD%E5%88%97%E8%A1%A8%E7%BD%91%E7%AB%991/</guid>
+      <description>React学习笔记6-快速构建一个动态全球独角兽列表网站(1)
+设计和架构 下面来通过React实战构建一个关于全球独角兽列表的网站。 主要就是作为一个小练习实践一下从前端到后端的web开发技术。
+界面设计 最快的方式当然直接用Bootstrap搞定，大概如下：
+网页布局主要包含三个部分：导航栏， 主要内容，翻页条。
+React的翻页功能有很多库已经可以直接用，但是出于学习的目的，这里还是手工写一个，逻辑也不复杂。
+后台数据格式 数据结构比较简单，从网上抓取的，主要包含： 独角兽名称，国家，最后一轮融资日期，总融资金额，创建年份，类别，估值，数据示例：
+{ &amp;quot;name&amp;quot;: &amp;quot;BAIC BJEV&amp;quot;, &amp;quot;country&amp;quot;: &amp;quot;CHN&amp;quot;, &amp;quot;last_funding_on&amp;quot;: &amp;quot;2017-08-01&amp;quot;, &amp;quot;total_equity_funding&amp;quot;: 1660000000, &amp;quot;founded_on&amp;quot;: 2009, &amp;quot;category&amp;quot;: &amp;quot;Transportation&amp;quot;, &amp;quot;post_money_val&amp;quot;: 4200000000 }, { &amp;quot;name&amp;quot;: &amp;quot;Intarcia Therapeutics&amp;quot;, &amp;quot;country&amp;quot;: &amp;quot;USA&amp;quot;, &amp;quot;last_funding_on&amp;quot;: &amp;quot;2017-09-01&amp;quot;, &amp;quot;total_equity_funding&amp;quot;: 1400000000, &amp;quot;founded_on&amp;quot;: 1997, &amp;quot;category&amp;quot;: &amp;quot;Health Care&amp;quot;, &amp;quot;post_money_val&amp;quot;: 4100000000 } 技术架构 后端采用sails.js快速API，前端通过React+Bootstrap实现。
+项目代码 https://github.com/rangwei/unicorns-bootstrap</description>
+    </item>
+    
+    <item>
+      <title>React学习笔记5</title>
+      <link>/posts/react%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B05-todo-app/</link>
+      <pubDate>Wed, 05 Feb 2020 09:38:48 +0800</pubDate>
+      
+      <guid>/posts/react%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B05-todo-app/</guid>
+      <description>TODO App  三人行，必有我师焉。择其善者而从之，其不善者而改之。 ——孔子
+ 现在通过前面学到的React基础知识快速构建一个简单的TODO APP。
+主要包含三个部分： 输入部分，未完成的事项，已经完成事项。
+输入部分 function Input({ addName }) { const [name, setName] = useState(&amp;quot;hello&amp;quot;); return ( &amp;lt;div&amp;gt; &amp;lt;h1&amp;gt;todo App&amp;lt;/h1&amp;gt; &amp;lt;br /&amp;gt; &amp;lt;input type=&amp;quot;text&amp;quot; name=&amp;quot;&amp;quot; value={name} onChange={(e) =&amp;gt; setName(e.target.value)} /&amp;gt; &amp;lt;button type=&amp;quot;button&amp;quot; name=&amp;quot;button&amp;quot; onClick={() =&amp;gt; addName(name)}&amp;gt;add todo&amp;lt;/button&amp;gt; &amp;lt;/div&amp;gt; ); } 输入部分包含一个输入框和一个按钮。
+未完成事项 function TodoList({ list, change }) { return ( &amp;lt;ul&amp;gt; {list.map(item =&amp;gt; &amp;lt;li&amp;gt;&amp;lt;input type=&amp;quot;checkbox&amp;quot; name=&amp;quot;&amp;quot; checked={item.completed} value={item.name} onChange={(e) =&amp;gt; change(e.target.value)} /&amp;gt;{item.name}&amp;lt;/li&amp;gt;)} &amp;lt;/ul&amp;gt; ); } 未完成部分是一个列表每一行包含了一个复选框和内容。</description>
+    </item>
+    
+    <item>
+      <title>React学习笔记4</title>
+      <link>/posts/react%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B04-effect-hooks/</link>
+      <pubDate>Tue, 04 Feb 2020 09:38:48 +0800</pubDate>
+      
+      <guid>/posts/react%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B04-effect-hooks/</guid>
+      <description>Effect Hooks  由俭入奢易，由奢入俭难。——司马光
+ 之前通过class来编写Component，一些辅助的方法是通过componentDidMount, componentDidUpdate来实现。通过React的effect hook可以实现类似的功能。
+比如现在在组件显示之前需要通过网络加载一下数据，还是通过之前用的users api来demo:
+import React, { useState, useEffect } from &#39;react&#39;; export default function UserList () { const [users, setUsers] = useState([]); useEffect( () =&amp;gt; { fetch(&#39;https://reqres.in/api/users&#39;) .then(res =&amp;gt; res.json()) .then(data =&amp;gt; setUsers(data.data)) .catch(e =&amp;gt; console.log(e)); }, [] ); return (&amp;lt;ul&amp;gt;{users.map(u =&amp;gt; &amp;lt;li&amp;gt;{u.email}&amp;lt;/li&amp;gt;)}&amp;lt;/ul&amp;gt;); } 这里传给useEffect第二个参数为一个空数组，这样就表示只需要在初始化的时候运行即可，不用每次render都调用。
+参考阅读  https://reactjs.org/docs/hooks-effect.html  </description>
+    </item>
+    
+    <item>
+      <title>React学习笔记3</title>
+      <link>/posts/react%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B03-state-hook/</link>
+      <pubDate>Mon, 03 Feb 2020 09:38:48 +0800</pubDate>
+      
+      <guid>/posts/react%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B03-state-hook/</guid>
+      <description>State Hook  吾生也有涯，而知也无涯。——庄子
+ 接着学习一下React的State Hook。
+通过State hook，可以直接通过function来构建有状态的组件，只要引入useState方法即可。
+写了一个小例子，包含一个输入和列表，分别通过两个function实现。 输入的数据通过一个列表展示：
+import React, { useState } from &#39;react&#39;; function Input({ addName }) { const [name, setName] = useState(&amp;quot;hello&amp;quot;); return ( &amp;lt;div&amp;gt; &amp;lt;label for=&amp;quot;&amp;quot;&amp;gt;name&amp;lt;/label&amp;gt; &amp;lt;input type=&amp;quot;text&amp;quot; name=&amp;quot;&amp;quot; value={name} onChange={(e) =&amp;gt; { setName(e.target.value) }} /&amp;gt; &amp;lt;button type=&amp;quot;button&amp;quot; name=&amp;quot;button&amp;quot; onClick={() =&amp;gt; { addName(name); }}&amp;gt;click me!&amp;lt;/button&amp;gt; &amp;lt;/div&amp;gt; ); } function List({ nameList }) { return ( &amp;lt;ul&amp;gt; {nameList.map(n =&amp;gt; &amp;lt;li&amp;gt;{n}&amp;lt;/li&amp;gt;)} &amp;lt;/ul&amp;gt; ); } function NameTool() { const [list, setList] = useState([]); const add = name =&amp;gt; { const newList = [.</description>
+    </item>
+    
+    <item>
+      <title>React学习笔记2</title>
+      <link>/posts/react%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B02-function-component/</link>
+      <pubDate>Sun, 02 Feb 2020 09:38:48 +0800</pubDate>
+      
+      <guid>/posts/react%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B02-function-component/</guid>
+      <description>Function Component  学无止境。——荀子
+ 接着学习一下React的function component。
+之前React主要通过class的方式来构建UI组件，但是可能在很多项目中存在一些弊端。Facebook设计了React Hook的方式，可以不通过class的方式来完成同样的功能。也就是只需要通过function component即可，这样带来的好处是代码更简单，bug更少。
+简单的Component 先看看一个简单的function component:
+import React from &#39;react&#39;; function Welcome({name}) { return &amp;lt;h1&amp;gt;{name}&amp;lt;/h1&amp;gt;; } function App() { return ( &amp;lt;Welcome name=&amp;quot;abc&amp;quot;/&amp;gt; ); } export default App; 这里Welcome({name})用到了destructing解析赋值的语法。
+Component组合 function component 可以组合， 把之前做的问卷调查小Demo重构一下：
+import React, { useState } from &#39;react&#39;; function Question({question, name, change}) { return ( &amp;lt;div&amp;gt; &amp;lt;label for=&amp;quot;&amp;quot;&amp;gt;{question}&amp;lt;/label&amp;gt; &amp;lt;input type=&amp;quot;radio&amp;quot; id=&amp;quot;1&amp;quot; name={name} value=&amp;quot;0&amp;quot; onChange={change}/&amp;gt; &amp;lt;label for=&amp;quot;&amp;quot;&amp;gt;超级满意&amp;lt;/label&amp;gt; &amp;lt;input type=&amp;quot;radio&amp;quot; id=&amp;quot;2&amp;quot; name={name} value=&amp;quot;1&amp;quot; onChange={change}/&amp;gt; &amp;lt;label for=&amp;quot;&amp;quot;&amp;gt;比较满意&amp;lt;/label&amp;gt; &amp;lt;input type=&amp;quot;radio&amp;quot; id=&amp;quot;3&amp;quot; name={name} value=&amp;quot;2&amp;quot; onChange={change}/&amp;gt; &amp;lt;label for=&amp;quot;&amp;quot;&amp;gt;满意&amp;lt;/label&amp;gt; &amp;lt;input type=&amp;quot;radio&amp;quot; id=&amp;quot;4&amp;quot; name={name} value=&amp;quot;3&amp;quot; onChange={change}/&amp;gt; &amp;lt;label for=&amp;quot;&amp;quot;&amp;gt;不满意&amp;lt;/label&amp;gt; &amp;lt;input type=&amp;quot;radio&amp;quot; id=&amp;quot;5&amp;quot; name={name} value=&amp;quot;4&amp;quot; onChange={change}/&amp;gt; &amp;lt;label for=&amp;quot;&amp;quot;&amp;gt;超级不满意&amp;lt;/label&amp;gt; &amp;lt;/div&amp;gt; ); } function SimpleSurvey({questions}) { let result = []; for (let q in questions) { result.</description>
+    </item>
+    
+    <item>
+      <title>React学习笔记1</title>
+      <link>/posts/react%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B01-hello-react/</link>
+      <pubDate>Sat, 01 Feb 2020 09:38:48 +0800</pubDate>
+      
+      <guid>/posts/react%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B01-hello-react/</guid>
+      <description>Hello React, Hello JavaScript!  千里之行，始于足下。——老子
+ 最近体验了一下著名的前端框架React，用起来特别爽，个人很喜欢。所以准备花一点点时间深入学习一下React。在这里把学习得过程也顺便记录下来。
+要学习React的话，先了解一下JavaScript的基础知识是非常有帮助的。JavaScript也是是目前非常火的编程语言，在有了Node.js以后，JS终于可以从前端到后端一统天下了。如果熟悉了JS以后，学习React非常简单。
+JS也很简单，基本语法快速浏览一下就差不多了。但是JS作为一门动态语言，也有很多非常有意思得特性。首先看几个React里会用到的JS语法。
+destructing 解构赋值 这是一个很方便的用法：
+let arr = [&#39;a&#39;, &#39;b&#39;]; let [first, last] = arr; console.log(first);//a console.log(last); //b 数组的复制 在JS中，数组的变量是引用传递，在下面的例子可以测试。
+在ES6中，有一个比较快捷的语法x = [&amp;hellip;y]可以拷贝一个新的数组。
+const rows = [0, 1, 2]; const copy = rows; rows.push(3); console.log(copy); //0, 1, 2, 3 const deepCopy = [...rows]; console.log(deepCopy); //0, 1, 2, 3 rows.push(4); console.log(deepCopy); //0, 1, 2, 3 箭头函数 箭头函数大家就非常熟悉了，在JS中，通过箭头函数能把代码写得非常简洁。
+在对象中，有一个细微的地方需要注意，箭头函数默认是没有绑定this的。看下面这个例子：
+const user = { name: &#39;Jacky&#39;, sayHello() { console.</description>
+    </item>
+    
+  </channel>
+</rss>
