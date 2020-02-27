@@ -1,4 +1,4 @@
-#baseurl = "Your site URL"
+baseurl = "https://peaceful-tor-92061.herokuapp.com/"
 languageCode = "en-us"
 title = "My React Learning Blogs"
 # Copyright notice. This is displayer in the footer.
